@@ -8,18 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: LBSwift_PersonalPage {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.nameLabel?.text = "BISON";
+        self.headImageView?.image = UIImage(named: "myheadimage.jpeg")
+        self.imageBG?.image = UIImage(named: "BG.jpg")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func leftBtnClick() {
+        println("我是继承左边的哦")
     }
-
+    override func rightBtnClick() {
+        println("我是继承右边的哦")
+    }
 
 }
 
