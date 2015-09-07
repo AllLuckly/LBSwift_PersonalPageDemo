@@ -2,7 +2,7 @@
 
 > [点击此--->更多开发技巧](http://allluckly.cf/) <br>
 
-`继承LBPersonalPage_VC`
+`继承LBSwift_PersonalPage`
 ```
     //头像设置
     self.headImageView?.image = UIImage(named: "myheadimage.jpeg")
