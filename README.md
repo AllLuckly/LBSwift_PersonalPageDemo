@@ -23,4 +23,4 @@ override func leftBtnClick() {
 
 ![(LBPersonalPageDemo)](https://github.com/AllLuckly/LBPersonalPageDemo/blob/master/123.gif?raw=true)
 
-[OC版](https://github.com/AllLuckly/LBPersonalPageDemo)
+需要OC版本的点击这里哟[OC版](https://github.com/AllLuckly/LBPersonalPageDemo)
