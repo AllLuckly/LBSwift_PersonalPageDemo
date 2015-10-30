@@ -33,7 +33,7 @@ class LBSwift_PersonalPage: UIViewController,UITableViewDataSource,UITableViewDe
         self.navigationController?.navigationBar.translucent = true
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        var rect = CGRectMake(0, 0, LBWIDTH, LBHEIGHT)
+//        var rect = CGRectMake(0, 0, LBWIDTH, LBHEIGHT)
         tabView = UITableView(frame:UIScreen.mainScreen().bounds,style:.Plain)
         tabView!.delegate = self
         tabView!.dataSource = self
@@ -67,24 +67,24 @@ class LBSwift_PersonalPage: UIViewController,UITableViewDataSource,UITableViewDe
         leftBtn!.setTitle("lift", forState: .Normal)
         leftBtn!.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         leftBtn!.addTarget(self, action: "leftBtnClick", forControlEvents: .TouchUpInside)
-        var leftItem:UIBarButtonItem = UIBarButtonItem(customView: leftBtn!)
+        let leftItem:UIBarButtonItem = UIBarButtonItem(customView: leftBtn!)
         self.navigationItem.leftBarButtonItem = leftItem
         
         rightBtn = UIButton(frame: CGRectMake(0, 0, 45, 20))
         rightBtn!.setTitle("right", forState: .Normal)
         rightBtn!.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         rightBtn!.addTarget(self, action: "rightBtnClick", forControlEvents: .TouchUpInside)
-        var rightItem:UIBarButtonItem = UIBarButtonItem(customView: rightBtn!)
+        let rightItem:UIBarButtonItem = UIBarButtonItem(customView: rightBtn!)
         self.navigationItem.rightBarButtonItem = rightItem
         
         
     }
     
     func leftBtnClick(){
-        println("点了我的左边")
+        print("点了我的左边")
     }
     func rightBtnClick(){
-        println("点了我的右边")
+        print("点了我的右边")
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -93,7 +93,7 @@ class LBSwift_PersonalPage: UIViewController,UITableViewDataSource,UITableViewDe
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        let  cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        let  cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) 
         
         cell.textLabel?.text = "BISON"
         
@@ -102,9 +102,9 @@ class LBSwift_PersonalPage: UIViewController,UITableViewDataSource,UITableViewDe
     
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        var yOffset:CGFloat = scrollView.contentOffset.y
+        let yOffset:CGFloat = scrollView.contentOffset.y
         
-        var xOffset:CGFloat  = (yOffset + 200)/2
+        let xOffset:CGFloat  = (yOffset + 200)/2
         
         if yOffset < -200{
             var rect:CGRect = imageBG!.frame

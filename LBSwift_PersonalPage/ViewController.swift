@@ -18,10 +18,10 @@ class ViewController: LBSwift_PersonalPage {
     }
     
     override func leftBtnClick() {
-        println("我是继承左边的哦")
+        print("我是继承左边的哦")
     }
     override func rightBtnClick() {
-        println("我是继承右边的哦")
+        print("我是继承右边的哦")
     }
 
 }

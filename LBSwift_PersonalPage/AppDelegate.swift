@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window?.backgroundColor = UIColor.whiteColor()
-        var vc = ViewController()
-        var nvc = UINavigationController(rootViewController: vc)
+        let vc = ViewController()
+        let nvc = UINavigationController(rootViewController: vc)
         self.window?.rootViewController = nvc;
         
         return true
